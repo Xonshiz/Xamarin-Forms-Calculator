@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinCalculator"
+             x:Class="XamarinCalculator.MainPage">
+
+    <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <!-- Place new controls here -->
+    	<Label x:Name="CalculationScreen_Label" WidthRequest="500" HeightRequest="200" BackgroundColor="Aqua" FontAttributes="Bold" FontSize="Large" />
+
+        <Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Seven_Button" Grid.Row="0" Grid.Column="0" Text="7" FontSize="Large" Clicked="Seven_Button_Clicked" />
+                <Button x:Name="Eight_Button" Grid.Row="0" Grid.Column="1" Text="8" FontSize="Large" Clicked="Eight_Button_Clicked" />
+                <Button x:Name="Nine_Button" Grid.Row="0" Grid.Column="2" Text="9" FontSize="Large" Clicked="Nine_Button_Clicked" />
+                <Button x:Name="Divide_Button" Grid.Row="0" Grid.Column="3" Text="/" FontSize="Large" Clicked="Divide_Button_Clicked" />
+
+                <Button x:Name="Four_Button" Grid.Row="1" Grid.Column="0" Text="4" FontSize="Large" Clicked="Four_Button_Clicked" />
+                <Button x:Name="Five_Button" Grid.Row="1" Grid.Column="1" Text="5" FontSize="Large" Clicked="Five_Button_Clicked" />
+                <Button x:Name="Six_Button" Grid.Row="1" Grid.Column="2" Text="6" FontSize="Large" Clicked="Six_Button_Clicked" />
+                <Button x:Name="Multiply_Button" Grid.Row="1" Grid.Column="3" Text="*" FontSize="Large" Clicked="Multiply_Button_Clicked" />
+
+                <Button x:Name="One_Button" Grid.Row="2" Grid.Column="0" Text="1" FontSize="Large" Clicked="One_Button_Clicked" />
+                <Button x:Name="Two_Button" Grid.Row="2" Grid.Column="1" Text="2" FontSize="Large" Clicked="Two_Button_Clicked" />
+                <Button x:Name="Three_Button" Grid.Row="2" Grid.Column="2" Text="3" FontSize="Large" Clicked="Three_Button_Clicked" />
+                <Button x:Name="Addition_Button" Grid.Row="2" Grid.Column="3" Text="+" FontSize="Large" Clicked="Addition_Button_Clicked" />
+
+                <Button x:Name="X_Button" Grid.Row="3" Grid.Column="0" Text="X" FontSize="Large" Clicked="Clear_Button_Clicked" />
+                <Button x:Name="Zero_Button" Grid.Row="3" Grid.Column="1" Text="0" FontSize="Large" Clicked="Zero_Button_Clicked" />
+                <Button x:Name="Period_Button" Grid.Row="3" Grid.Column="2" Text="." FontSize="Large" Clicked="Period_Button_Clicked" />
+                <Button x:Name="Equal_Button" Grid.Row="3" Grid.Column="3" Text="=" FontSize="Large" Clicked="Equal_Button_Clicked" />
+            </Grid>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
